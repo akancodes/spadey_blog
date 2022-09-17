@@ -1,0 +1,126 @@
+:root {
+    --spadey-white: #ffffff;
+    --spadey-main-button: #5865F2;
+    --spadey-pink: #FA8888;
+    --spadey-bg: #1E1E1E;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--spadey-white);
+    text-decoration: none;
+}
+
+.text-white {
+    color: var(--spadey-white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--spadey-bg);
+    padding: 10px 20px;
+}
+
+nav a {
+    margin-right: 45px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.btn {
+    padding: 10px 20px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.btn-main {
+    background: var(--spadey-main-button);
+    color: var(--spadey-white);
+    font-weight: 600;
+    border-radius: 25px;
+    transition-duration: 300ms;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.btn-main:hover {
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
+}
+
+.slider {
+    background: var(--spadey-pink);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider h2 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.slider .btn {
+    margin-bottom: 35px;
+}
+
+.what-news {
+    background: var(--spadey-bg);
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.title-xl {
+    font-size: 44px;
+}
+
+.latest-posts {
+    display: flex;
+    justify-content: space-around;
+    min-width: 960px;
+    max-width: 1060px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.post {
+    min-height: 293px;
+    background: var(--spadey-pink);
+    border-radius: 66px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.user {
+    position: absolute;
+    bottom: 80px;
+    left: 15px;
+}
+
+.post-footer {
+    margin-top: 10px
+}

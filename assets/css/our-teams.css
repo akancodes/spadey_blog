@@ -1,0 +1,143 @@
+:root {
+  --spadey-white: #ffffff;
+  --spadey-main-button: #5865f2;
+  --spadey-pink: #fa8888;
+  --spadey-bg: #1e1e1e;
+  --spadey-magenta: #FF5CFF;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--spadey-bg);
+}
+
+a {
+  color: var(--spadey-white);
+  text-decoration: none;
+}
+
+.text-white {
+  color: var(--spadey-white);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--spadey-bg);
+  padding: 10px 20px;
+}
+
+nav a {
+  margin-right: 45px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  padding: 10px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.btn-lg {
+  padding: 15px 80px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 24px;
+}
+
+.btn-main {
+  background: var(--spadey-main-button);
+  color: var(--spadey-white);
+  font-weight: 600;
+  border-radius: 25px;
+  transition-duration: 300ms;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.team h1 {
+    color: var(--spadey-white);
+    font-size: 44px;
+}
+
+.team h4 {
+    color: var(--spadey-white);
+    font-size: 18px;
+}
+
+.users {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.users-header {
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 45px;
+}
+
+.users-footer {
+    min-width: 960px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-image {
+    position: relative;
+}
+
+.user-role {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--spadey-white);
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.user-title {
+    background: var(--spadey-magenta);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.join-text {
+    color: var(--spadey-white);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.join-our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
