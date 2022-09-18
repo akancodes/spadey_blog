@@ -1,0 +1,141 @@
+:root {
+  --spadey-white: #ffffff;
+  --spadey-main-button: #5865f2;
+  --spadey-pink: #fa8888;
+  --spadey-bg: #1e1e1e;
+  --spadey-magenta: #ff5cff;
+  --spadey-red: #E33939;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--spadey-bg);
+  max-width: 1260px;
+  margin: 40px auto;
+  color: var(--spadey-white);
+}
+
+a {
+  color: var(--spadey-white);
+  text-decoration: none;
+}
+
+.text-white {
+  color: var(--spadey-white);
+}
+
+.btn {
+  padding: 10px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.btn-lg {
+  padding: 15px 80px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 24px;
+}
+
+.btn-main {
+  background: var(--spadey-main-button);
+  color: var(--spadey-white);
+  font-weight: 600;
+  border-radius: 25px;
+  transition-duration: 300ms;
+}
+
+.btn-danger {
+  background: var(--spadey-red);
+  color: var(--spadey-white);
+  font-weight: 600;
+  border-radius: 25px;
+  transition-duration: 300ms;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.welcome {
+  color: var(--spadey-pink);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.introduction-text {
+  color: var(--spadey-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ways {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.way {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.way-title {
+  color: var(--spadey-main-button);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.way span {
+  display: flex;
+}
+
+.way-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  min-width: 400px;
+}
+
+.way-right p {
+  font-size: 22px;
+}
+
+.way-right button {
+  align-self: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information * {
+  margin-top: 15px;
+}
+
+.information button {
+  margin-top: 40px;
+}
+
+.danger-text {
+  color: #BD4070;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+}
